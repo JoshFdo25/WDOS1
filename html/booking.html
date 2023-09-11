@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Hotel | Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="room-booking-hero">
+        <div class="navbar">
+            <a href="../html/home.html"><img src="../images/logo.png" alt="logo" class="logo"></a>
+            <p class="title">Sakura Hotel Trinco</p>
+            <div class="nav">
+                <img src="../images/PinClipart.com_menu-clip-art_5328945 (1).png" alt="Menu" class="menu" onclick="ShowMenu()">
+                <ul id="navibar">
+                    <img src="../images/PinClipart.com_doctor-office-clip-art_1046141.png" alt="Close" class="menu" onclick="HideMenu()">
+                    <li><a href="../html/home.html">Home</a></li>
+                    <li><a href="../html/branches.html">Branches</a></li>
+                    <li><a href="../html/adventures.html">Adventures</a></li>
+                    <li><a href="../html/restaurants.html">Restaurants</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="../html/meetings & events.html">Meetings & Events</a></li>
+                                <li><a href="../html/wedding & celebrations.html">Weddings</a></li>
+                            </ul>
+                        </div>
+                    </li>    
+                    <li><a class="active" href="../html/booking.html">Bookings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-title">
+            <h1>Book your room and adventures now</h1>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <div class="room-booking-form">
+            <form>
+                <h2 class="booking-heading">Room Booking</h2>
+
+                <div class="form-field">
+                    <p>Name</p>
+                    <input type="text" required="" placeholder="Enter your name">
+                </div>
+                <div class="form-field">
+                    <p>Check-In</p>
+                    <input type="date" required="">
+                </div>
+                <div class="form-field">
+                    <p>Check-Out</p>
+                    <input type="date" required="">
+                </div>
+                <div class="form-field">
+                    <p>Room type</p>
+                    <select name="Room-select">
+                        <option>- Select Room -</option>
+                        <option>Standard Room</option>
+                        <option>Deluxe Suite</option>
+                        <option>Executive Suite</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <p>No. of people</p>
+                    <select name="people-select" required="">
+                        <option>- Select -</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+                <button class="btn">Check Availability</button>
+            </form>
+        </div>
+
+        <div class="adventure-booking-hero">
+            <div class="adventure-booking-form">
+                <form>
+                    <h2 class="booking-heading">Adventure Booking</h2>
+
+                    <div class="form-field">
+                        <p>Name</p>
+                        <input type="text" required="" placeholder="Enter your name">
+                    </div>
+                    <div class="form-field">
+                        <p>Select a date</p>
+                        <input type="date" required="">
+                    </div>
+                    <div class="form-field">
+                        <p>Adventure type</p>
+                        <select name="adventure-select">
+                            <option>- Select Adventure -</option>
+                            <option>Scuba Diving</option>
+                            <option>Boat Tours</option>
+                            <option>Jet Skiing</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <p>No. of people</p>
+                        <select name="people-select" required="">
+                            <option>- Select -</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>5+</option>
+                        </select>
+                    </div>
+                    <button class="btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var navibar = document.getElementById("navibar");
+        function ShowMenu(){
+            navibar.style.right = "0";
+        }
+        function HideMenu(){
+            navibar.style.right = "-200px";
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+             <div class="logo">
+                 <img src="../images/logo.png" alt="logo">
+             </div>
+             <div class="contact">
+                 <h3>Contact Us</h3>
+                 <p>1234 Hotel Street<br>City, Country<br>Phone: +1123-456-7890<br>Email:sakurahotel@gmail.com</p>
+             </div>
+             <div class="links">
+                 <h3>Quick Links</h3>
+                 <ul>
+                     <li><a href="../html/home.html">Home</a></li>
+                     <li><a href="../html/branches.html">Branches</a></li>
+                     <li><a href="../html/adventures.html">Adventures</a></li>
+                     <li><a href="../html/restaurants.html">Restaurants</a></li>
+                     <li><a href="../html/booking.html">Bookings</a></li>
+                 </ul>
+             </div>
+             <div class="social-icons">
+                <h3>Follow us on</h3>
+                <ul>
+                    <li><a href="https://web.facebook.com/login/?_rdc=1&_rdr&wtsid=rdr_0J0tNHUIofqr05wvA"><img src="../images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/"><img src="../images/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://web.whatsapp.com/"><img src="../images/whatsapp.png" alt="Whatsapp"></a></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="copyrights"><p>All Copyrights Reserved by The Kingsbury Hotel - &copy; 2023</p></div>
+        </div>
+     </footer>
+</body>
+</html>
